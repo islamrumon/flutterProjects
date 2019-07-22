@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'QuizzPage.dart';
 
 void main(){
-  runApp(QuizzApp(
-  ));
+  runApp(QuizzApp());
 }
 
 class QuizzApp extends StatelessWidget {
@@ -10,38 +10,21 @@ class QuizzApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.lightBlueAccent,
-          title: Center(child: Text('QuizzApp'),),
+      theme: ThemeData.dark(),
+      home: SafeArea(
+        child: Scaffold(
+          appBar: AppBar(
+            backgroundColor: Colors.red,
+            title: Center(child: Text('QuizzApp'),),
+          ),
+
+          body: QuizzPage(),
         ),
-        body: QuizzPage(),
       ),
 
     );
   }
 }
 
-class QuizzPage extends StatefulWidget {
-  @override
-  _QuizzPageState createState() => _QuizzPageState();
-}
 
-class _QuizzPageState extends State<QuizzPage> {
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      children: <Widget>[
-        Expanded(
-          flex: 5,
-
-        ),
-        //this is for button
-        Expanded(),
-        //another button
-        Expanded()
-      ],
-    );
-  }
-}
 
