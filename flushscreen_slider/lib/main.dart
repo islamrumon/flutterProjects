@@ -47,7 +47,8 @@ class _CarouselState extends State<Carousel> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: DefaultTabController(length: items.length,
+      body: DefaultTabController(
+          length: items.length,
           child: Builder(
               builder: (BuildContext context)=>Padding(
               padding: EdgeInsets.only(left: 20, top: 10, right: 20, bottom: 20),
