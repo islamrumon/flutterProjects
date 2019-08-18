@@ -181,6 +181,59 @@ class _ContactScreenState extends State<ContactScreen> {
                     value: selectVia,
                   ),
                 ),
+                 Padding(
+                   padding: const EdgeInsets.only(bottom: 10.0,right: 5,left: 5),
+                   child: Stack(
+//                   alignment: Alignment.topRight,
+                      children: <Widget>[
+                        Positioned(
+                          top: 0,
+                          bottom: 0,
+                          left: 0,
+                          right: size.width/2,
+                          child: Container(
+//                          padding: EdgeInsets.symmetric(horizontal: 10.0),
+//                          color: Colors.blueAccent,
+                            child: TextField(
+                              style: TextStyle(
+                                fontSize: 18,
+                              ),
+                              onChanged: (note) {
+                                print(note);
+                              },
+                              decoration: InputDecoration(
+                                labelStyle: TextStyle(color: Colors.green),
+                                labelText: 'City',
+                                focusColor: Colors.black,
+                              ),
+                            ),
+                          ),
+                        ),
+                        Align(
+                          alignment: Alignment.topRight,
+                          child: Container(
+                            width: size.width /2,
+//                          color: Colors.pinkAccent,
+//                          padding: EdgeInsets.symmetric(horizontal: 10.0),
+                            child: TextField(
+                              style: TextStyle(
+                                fontSize: 18,
+                              ),
+                              onChanged: (note) {
+                                print(note);
+                              },
+                              decoration: InputDecoration(
+                                labelStyle: TextStyle(color: Colors.green),
+                                labelText: 'Country',
+                                focusColor: Colors.black,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                 ),
+
 
                 Text(
                   'Vanue',
@@ -207,7 +260,6 @@ class _ContactScreenState extends State<ContactScreen> {
                     value: selectVenue,
                   ),
                 ),
-
                 //this is note input
                 Container(
                   padding: EdgeInsets.symmetric(horizontal: 10.0),
@@ -230,19 +282,28 @@ class _ContactScreenState extends State<ContactScreen> {
           ),
 
 //           Row(
-//              crossAxisAlignment: CrossAxisAlignment.start,
-//              children: values.keys.map((keys){
-//                return CheckboxListTile(
-//                  onChanged: (bool value){
-//                     setState(() {
-//                       values[keys] = value;
-//                     });
-//                  },
-//                  value: values[keys],
-//                  title: keys,
-//                );
-//              }).toList(),
-//            ),
+//             crossAxisAlignment: CrossAxisAlignment.start,
+//             children: <Widget>[
+//                CheckboxListTile(
+//
+//                ),
+//
+//             ],
+//           ),
+           Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: values.keys.map((keys){
+                return CheckboxListTile(
+                  onChanged: (bool value){
+                     setState(() {
+                       values[keys] = value;
+                     });
+                  },
+                  value: values[keys],
+                  title: keys,
+                );
+              }).toList(),
+            ),
 
           //todo:button section
           ButtonTheme(
