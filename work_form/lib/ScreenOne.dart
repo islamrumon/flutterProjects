@@ -369,10 +369,10 @@ class _ScreenOneState extends State<ScreenOne> {
                                 width: size.width / 4 - 10,
                                 decoration: BoxDecoration(
                                   border: Border.all(
-                                    width: 2.0,
+                                    width: 3.0,
                                     color: selectorAction[index] == true
-                                        ? Colors.black
-                                        : Colors.green,
+                                        ? Colors.grey
+                                        : Colors.lightGreen,
                                   ),
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(20.0)),
@@ -384,7 +384,8 @@ class _ScreenOneState extends State<ScreenOne> {
                                         MainAxisAlignment.spaceAround,
                                     children: <Widget>[
 //                                   Icon(FontAwesomeIcons.check, value1 == true ? size: 10: size:0,) : null,
-//                                   Image(image: AssetImage('img/rumon.jpg'),fit: BoxFit.contain,alignment: Alignment.center),
+                                    //TODO:If you Show the picture so ancomment that
+        //                              Image(image: AssetImage('img/w.jpg'),fit: BoxFit.contain,alignment: Alignment.center),
                                   selectorIcon[index],
                                       Text(
                                         selectorStrign[index],
