@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:ui';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'ReuseSelectorButton.dart';
+import 'SelectButton.dart';
 
 class ScreenOne extends StatefulWidget {
   @override
@@ -33,26 +35,7 @@ class _ScreenOneState extends State<ScreenOne> {
 //    [true, Icon(FontAwesomeIcons.motorcycle), 'Select 6'],
 //  ];
 
-  List<String> selectorStrign=[
-    'Select 1','Select 2','Select 2','Select 4','Select 5','Select 6'
-  ];
-  List<bool> selectorAction=[
-    false,true,true,false,true,false
-  ];
-  List<Icon> selectorIcon=[
-    Icon(FontAwesomeIcons.filePdf,size: 34,
-      color: Colors.blueAccent,),Icon(FontAwesomeIcons.wordpress,size: 34,
-      color: Colors.blueAccent,), Icon(FontAwesomeIcons.music,size: 34,
-      color: Colors.blueAccent,),
-    Icon(FontAwesomeIcons.gavel,size: 34,
-      color: Colors.blueAccent,),Icon(FontAwesomeIcons.expand,size: 34,
-      color: Colors.blueAccent,),Icon(FontAwesomeIcons.motorcycle,size: 34,
-      color: Colors.blueAccent,),
-  ];
-  bool value1 = false;
-  bool value2 = false;
-  bool value3 = false;
-  bool value4 = false;
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -275,6 +258,7 @@ class _ScreenOneState extends State<ScreenOne> {
                       ),
                     ),
                     Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: <Widget>[
                         Expanded(
                           child: Container(
@@ -348,58 +332,7 @@ class _ScreenOneState extends State<ScreenOne> {
                         style: TextStyle(color: Colors.lightGreen),
                       ),
                     ),
-                    Container(
-                      margin: EdgeInsets.symmetric(vertical: 20.0),
-                      height: 140.0,
-                      child: ListView.builder(
-                        scrollDirection: Axis.horizontal,
-                        itemCount: selectorStrign.length,
-                        itemBuilder: (context, index) {
-                          return Container(
-                            padding: EdgeInsets.all(8.0),
-                            child: InkWell(
-                              onTap: () {
-                                setState(() {
-                                  selectorAction[index] = !selectorAction[index];
-                                  print(selectorAction[index]);
-                                });
-                              },
-                              child: Container(
-                                height: 120,
-                                width: size.width / 4 - 10,
-                                decoration: BoxDecoration(
-                                  border: Border.all(
-                                    width: 3.0,
-                                    color: selectorAction[index] == true
-                                        ? Colors.grey
-                                        : Colors.lightGreen,
-                                  ),
-                                  borderRadius:
-                                      BorderRadius.all(Radius.circular(20.0)),
-                                ),
-                                child: Padding(
-                                  padding: const EdgeInsets.all(10.0),
-                                  child: Column(
-                                    mainAxisAlignment:
-                                        MainAxisAlignment.spaceAround,
-                                    children: <Widget>[
-//                                   Icon(FontAwesomeIcons.check, value1 == true ? size: 10: size:0,) : null,
-                                    //TODO:If you Show the picture so ancomment that
-        //                              Image(image: AssetImage('img/w.jpg'),fit: BoxFit.contain,alignment: Alignment.center),
-                                  selectorIcon[index],
-                                      Text(
-                                        selectorStrign[index],
-                                        textAlign: TextAlign.center,
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ),
-                          );
-                        },
-                      ),
-                    ),
+                   SelectButton(),
                     //todo: app footer section Padding 1, 2
                     Padding(
                       padding: EdgeInsets.all(14.0),
@@ -489,35 +422,3 @@ class _ScreenOneState extends State<ScreenOne> {
   }
 }
 
-//Container(
-//child: InkWell(
-//onTap: (){
-//setState(() {
-//value1 = !value1;
-//});
-//},
-//child: Container(
-//height: 100,
-//width: size.width /4 - 10,
-//decoration: BoxDecoration(
-//border: Border.all(
-//width: 2.0,
-//color: value1 == true ? Colors.pink : Colors.green,
-//),
-//borderRadius: BorderRadius.all(Radius.circular(20.0)),
-//),
-//child: Padding(
-//padding: const EdgeInsets.all(10.0),
-//child: Column(
-//mainAxisAlignment: MainAxisAlignment.spaceAround,
-//children: <Widget>[
-////                                   Icon(FontAwesomeIcons.check, value1 == true ? size: 10: size:0,) : null,
-////                                   Image(image: AssetImage('img/rumon.jpg'),fit: BoxFit.contain,alignment: Alignment.center),
-//Icon(FontAwesomeIcons.filePdf,size: 34,color: Colors.yellow,),
-//Text('Instraction Clip',textAlign: TextAlign.center,),
-//],
-//),
-//),
-//),
-//),
-//),
