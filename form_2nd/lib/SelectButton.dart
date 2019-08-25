@@ -17,11 +17,11 @@ class _SelectButtonState extends State<SelectButton> {
     'Select 4',
     'Select 5',
     'Select 6',
-    'Select 7',
-    'Select 8',
-    'Select 9',
+
+
+
   ];
-  List<bool> selectorAction = [false, true, true, false, true, false,false, true, true];
+  List<bool> selectorAction = [false, true, true, false, true, false,false, ];
   List<Icon> selectorIcon = [
     Icon(
       FontAwesomeIcons.filePdf,
@@ -59,9 +59,9 @@ class _SelectButtonState extends State<SelectButton> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
-    int range=3;
     List<Widget> children=  [];
     List<Widget> widget =[];
+    int rais=3;
     for(int i=0; i<selectorStrign.length; i++){
       children.add( ReuseSelectorButton(
           size: size,
@@ -77,10 +77,8 @@ class _SelectButtonState extends State<SelectButton> {
           name: selectorStrign[i],
           active: selectorAction[i],
         ));
-//todo:there are select button lemit 18
-      if(i==range  || i==selectorStrign.length-1){
-        range+=4;
-        print(range);
+      if(rais == i || i==selectorStrign.length-1){
+        rais+=4;
          widget.add(Row(
            children: children,
          ));

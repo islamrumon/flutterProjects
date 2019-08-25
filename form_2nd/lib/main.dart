@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:country_code_picker/country_code_picker.dart';
 import 'MySeparator.dart';
-import 'package:flutter_multiselect/flutter_multiselect.dart';
 import 'ReuseSelectorButton.dart';
 import 'package:multiselect_formfield/multiselect_formfield.dart';
+import 'SelectButton.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -499,16 +499,17 @@ class _SndScreenState extends State<SndScreen> {
                             height: 150,
                             width: size.width,
                             decoration: BoxDecoration(
+                              color: Colors.white12,
                               border: Border.all(
                                   width: 2, color: Colors.deepPurpleAccent),
                               borderRadius:
                                   BorderRadius.all(Radius.circular(5.0)),
                             ),
-                            child:  ListView(
+                            child: ListView(
                               children: <Widget>[
                                 MultiSelectFormField(
                                   autovalidate: false,
-                                  titleText: 'Contrey',
+                                  titleText:  'Contrey',
                                   validator: (value) {
                                     if (value == null || value.length == 0) {
                                       return 'Please select one or more options';
@@ -587,7 +588,6 @@ class _SndScreenState extends State<SndScreen> {
                                   },
                                 ),
                               ],
-
                             ),
                           ),
                         ),
@@ -623,7 +623,7 @@ class _SndScreenState extends State<SndScreen> {
                         ),
                         //todo:Interest this is the multipal checkbox
                         Padding(
-                          padding: const EdgeInsets.only(top: 15.0,bottom: 10),
+                          padding: const EdgeInsets.only(top: 15.0, bottom: 10),
                           child: Container(
                             height: 100,
                             width: size.width,
@@ -733,9 +733,10 @@ class _SndScreenState extends State<SndScreen> {
                           //   height: 200.0,
                           margin: EdgeInsets.only(top: 10),
                           decoration: new BoxDecoration(
-                              border: new Border.all(color: Colors.grey,width: 1.5),
-                          borderRadius: BorderRadius.all(Radius.circular(8.0))
-                          ),
+                              border: new Border.all(
+                                  color: Colors.grey, width: 1.5),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(8.0))),
 
                           child: new TextField(
                               maxLines: 4,
@@ -751,7 +752,7 @@ class _SndScreenState extends State<SndScreen> {
                         //todo:this is the border design 2
                         Padding(
                           padding:
-                          const EdgeInsets.only(top: 28.0, bottom: 18.0),
+                              const EdgeInsets.only(top: 28.0, bottom: 18.0),
                           child: Flex(
                             direction: Axis.vertical,
                             children: <Widget>[
@@ -761,6 +762,87 @@ class _SndScreenState extends State<SndScreen> {
                               )
                             ],
                           ),
+                        ),
+                        //todo:this is social media
+
+                        Column(
+                          children: <Widget>[
+                            Text('Sociiiiiiiiiiiiiiiiiia'),
+                            TextField(
+                              decoration: InputDecoration(
+                                  border: OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                        color: Colors.grey, width: 1.0),
+                                  ),
+                                  suffixIcon: Icon(
+                                    FontAwesomeIcons.solidStar,
+                                    color: Colors.blueAccent,
+                                  )),
+                            ),
+                            TextField(
+                              decoration: InputDecoration(
+                                  border: OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                        color: Colors.grey, width: 1.0),
+                                  ),
+                                  suffixIcon: Icon(
+                                    FontAwesomeIcons.solidStar,
+                                    color: Colors.blueAccent,
+                                  )),
+                            ),
+                            TextField(
+                              decoration: InputDecoration(
+                                  border: OutlineInputBorder(
+                                    borderSide: BorderSide(
+                                        color: Colors.grey, width: 1.0),
+                                  ),
+                                  suffixIcon: Icon(
+                                    FontAwesomeIcons.solidStar,
+                                    color: Colors.blueAccent,
+                                  )),
+                            ),
+                            Align(
+                              alignment: Alignment.topRight,
+                              child: Container(
+                                  margin: EdgeInsets.all(10.0),
+                                  height: 40,
+                                  width: 120,
+                                  decoration: BoxDecoration(
+                                      border: Border.all(
+                                          width: 1, color: Colors.green),
+                                      borderRadius:
+                                          BorderRadius.all(Radius.circular(10))),
+                                  child: FlatButton(
+                                    onPressed: null,
+                                    child: Row(
+                                      children: <Widget>[
+                                        Icon(
+                                          FontAwesomeIcons.solidAddressBook,
+                                          color: Colors.green,
+                                        ),
+                                        Text(' Add More',style: TextStyle(fontSize:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        12),),
+                                      ],
+                                    ),
+                                    color: Colors.white,
+                                  )),
+                            ),
+                          ],
                         ),
                         //todo:File upload there are select icon section how to do it
                         Padding(
@@ -773,106 +855,8 @@ class _SndScreenState extends State<SndScreen> {
                             ),
                           ),
                         ),
-                        Row(
-                          children: <Widget>[
-                            ReuseSelectorButton(
-                              size: size,
-                              onTap: (){
-                                setState(() {
-                                  selectorAction[0] = !selectorAction[0];
-                                  print(selectorAction[0]);
-                                });
-                              },
-                              image: Image(
-                                image: AssetImage('img/0.jpg'),
-                              ),
-                              name: selectorStrign[0],
-                              active: selectorAction[0],
-                            ),
-                            ReuseSelectorButton(
-                              size: size,
-                              onTap: (){
-                                setState(() {
-                                  selectorAction[1] = !selectorAction[1];
-                                  print(selectorAction[1]);
-                                });
-                              },
-                              image: Image(
-                                image: AssetImage('img/1.jpg'),
-                              ),
-                              name: selectorStrign[1],
-                              active: selectorAction[1],
-                            ),
-                            ReuseSelectorButton(
-                              size: size,
-                              onTap: (){
-                                setState(() {
-                                  selectorAction[2] = !selectorAction[2];
-                                  print(selectorAction[2]);
-                                });
-                              },
-                              image: Image(
-                                image: AssetImage('img/2.jpg'),
-                              ),
-                              name: selectorStrign[2],
-                              active: selectorAction[2],
-                            ),
-                            ReuseSelectorButton(
-                              size: size,
-                              onTap: (){
-                                setState(() {
-                                  selectorAction[3] = !selectorAction[3];
-                                  print(selectorAction[3]);
-                                });
-                              },
-                              image: Image(
-                                image: AssetImage('img/3.jpg'),
-                              ),
-                              name: selectorStrign[3],
-                              active: selectorAction[3],
-                            ),
-                          ],
-                        ),
-                        Row(
-                          children: <Widget>[
-                            ReuseSelectorButton(
-                              size: size,
-                              onTap: (){
-                                setState(() {
-                                  selectorAction[4] = !selectorAction[4];
-                                  print(selectorAction[4]);
-                                });
-                              },
-                              image: Image(
-                                image: AssetImage('img/4.jpg'),
-                              ),
-                              name: selectorStrign[4],
-                              active: selectorAction[4],
-                            ),
-                            ReuseSelectorButton(
-                              size: size,
-                              onTap: (){
-                                setState(() {
-                                  selectorAction[5] = !selectorAction[5];
-                                  print(selectorAction[5]);
-                                });
-                              },
-                              image: Image(
-                                image: AssetImage('img/5.jpg'),
-                              ),
-                              name: selectorStrign[5],
-                              active: selectorAction[5],
-                            ),
-                            ReuseSelectorButton(
-                              size: size,
-                              onTap: null,
-                              icon: Icon(FontAwesomeIcons.solidAngry,color: Colors.green,),
-                              name: 'Add new File',
-                              active: true,
-                            ),
+                        SelectButton(),
 
-                          ],
-                        ),
                         //todo: app footer section Padding 1, 2
                         Padding(
                           padding: EdgeInsets.only(
