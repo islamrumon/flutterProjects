@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:clone_bbc_news/custom_expansion_tile.dart' as custom;
-import 'cat.dart';
+import 'class/DrawerMenuList.dart';
+import 'class/helper.dart';
 
 class DrawerList extends StatefulWidget {
   final cat cats;
@@ -11,7 +12,6 @@ class DrawerList extends StatefulWidget {
 
 class _DrawerListState extends State<DrawerList> {
   bool ns = false;
-
   @override
   Widget build(BuildContext context) {
     return Container(child: _buildTiles(widget.cats));
@@ -21,19 +21,20 @@ class _DrawerListState extends State<DrawerList> {
     if (t.children.isEmpty)
       return Container(
         height: 40,
-        color: Colors.black12,
+        color: childMenuBackgroundColor,
         child: ListTile(
             onTap: (){
+              //todo:here are the Drawer button action
               print(t.title);
             },
-            title: Text(t.title,style: TextStyle(color: Colors.white70),)),
+            title: Text(t.title,style: childMenuStyle,)),
       );
 
     return Container(
       child:  custom.ExpansionTile(
-        iconColor: Colors.white,
+        iconColor: drawerIconColor,
         key:  PageStorageKey<int>(3),
-        title:  Text(t.title,style: TextStyle(color: Colors.white70,fontWeight: FontWeight.bold)),
+        title:  Text(t.title,style: parantMenuStyle),
         children: t.children.map(_buildTiles).toList(),
       ),
     );
