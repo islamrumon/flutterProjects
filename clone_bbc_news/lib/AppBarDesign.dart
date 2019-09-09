@@ -24,7 +24,7 @@ class _AppBarDesignState extends State<AppBarDesign> {
       length: tabMenuList.length,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: appBarColors,
+          backgroundColor: primaryColor,
           title: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[

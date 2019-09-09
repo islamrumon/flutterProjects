@@ -10,7 +10,6 @@ final drawerIconColor = Colors.white;
 final drawerBackgroundColors = Colors.black;
 
 //this is AppBar section
-final appBarColors = Colors.redAccent;
 final iconColor = Colors.white;
 
 //this is TabBar section
@@ -42,7 +41,8 @@ final topicsText = TextStyle(
   fontSize: 16,
   color: Colors.black,
 );
-final primaryColor = Colors.redAccent;
+//Color.fromRGBO(187, 25, 25, 1)
+final primaryColor = Color.fromRGBO(187, 25, 25, 1);
 final detailVideoStyle = TextStyle(color: Colors.white);
 
 //show time design

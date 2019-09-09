@@ -1,3 +1,4 @@
+import 'package:clone_bbc_news/class/helper.dart' as prefix0;
 import 'package:flutter/material.dart';
 import 'package:clone_bbc_news/class/news.dart';
 import 'package:clone_bbc_news/class/helper.dart';
@@ -40,7 +41,7 @@ class DataSearch extends SearchDelegate<news> {
   ThemeData appBarTheme(BuildContext context) {
     final ThemeData theme = Theme.of(context);
     return theme.copyWith(
-      primaryColor: appBarColors,
+      primaryColor: prefix0.primaryColor,
       primaryIconTheme: theme.primaryIconTheme,
       primaryColorBrightness: theme.primaryColorBrightness,
       primaryTextTheme: theme.primaryTextTheme,
