@@ -6,10 +6,16 @@ import 'package:cnn_news_app/screen/tab_view_screen.dart';
 import 'package:flutter/material.dart';
 
 
-final pageSource = [
+//final pageSource = [
+//  TabViewScreen(),
+//  SearchScrenn(),
+//  BookmarkScreen(),
+//  SettingScreen(),
+//];
+final pageSource =[
   TabViewScreen(),
   SearchScrenn(),
-  BookmarkScreen(),
-  SettingScreen(),
+  Text("natok"),
+  Text("natok"),
 ];
 

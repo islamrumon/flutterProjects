@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:cnn_news_app/helper/helper.dart';
 
 class SettingScreen extends StatefulWidget {
   @override
@@ -8,8 +9,13 @@ class SettingScreen extends StatefulWidget {
 class _SettingScreenState extends State<SettingScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text("setting screen"),
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: primaryColor,
+        title: Center(
+          child: Text("Setting Section"),
+        ),
+      ),
     );
   }
 }

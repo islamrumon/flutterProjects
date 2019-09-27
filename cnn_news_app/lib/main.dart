@@ -1,3 +1,4 @@
+import 'package:cnn_news_app/screen/single_news_screen.dart';
 import 'package:flutter/material.dart';
 import 'widget/app_bar_custom.dart';
 import 'screen/search_screen.dart';
@@ -9,7 +10,8 @@ class StartApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: SearchScrenn(),
+//      home: SingleScreen(),
+      home: AppBarCustom(),
     );
   }
 }

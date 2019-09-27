@@ -21,7 +21,7 @@ final textColors =Colors.black;
 
 
 //news title style
-final titleTextStyle = TextStyle(color: Colors.white,fontSize: 14);
+final titleTextStyle = TextStyle(color: Colors.white,fontSize: 24);
 final bookmark = Icon(Icons.bookmark_border,size: 14,color: Colors.black,);
 final shareicon = Icon(Icons.share,size: 14,color: Colors.black,);
 final timeTextStyle = TextStyle(color: primaryColor,fontSize: 12,);

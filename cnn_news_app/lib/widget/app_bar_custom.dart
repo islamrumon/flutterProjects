@@ -24,6 +24,7 @@ class _AppBarCustomState extends State<AppBarCustom> {
           onTap: (int index) {
             setState(() {
               selectpage = index;
+              print(index);
             });
           },
           items: [

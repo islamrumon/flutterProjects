@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:cnn_news_app/helper/helper.dart';
 import 'package:cnn_news_app/widget/related_news.dart';
+import 'package:cnn_news_app/helper/news.dart';
+import 'package:cnn_news_app/widget/grid_view.dart';
 
 class SingleScreen extends StatefulWidget {
 //  static const dataroute = 'single_screen';
@@ -12,18 +14,28 @@ class _SingleScreenState extends State<SingleScreen> {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
+    List<Widget> related = [];
+    for (var i = 0; i < listOfNews.length; i++) {
+      related.add( GridNews(
+        title: listOfNews[i].title,
+        image: listOfNews[i].image,
+        location: listOfNews[i].location.toString(),
+        time: listOfNews[i].time.toString(),
+        detials: listOfNews[i].detials.toString(),
+      ));
+    }
     return Scaffold(
       appBar: AppBar(
 //        title: Text('Details App'),
         backgroundColor: primaryColor,
         actions: <Widget>[
           IconButton(
-            onPressed: (){},
+            onPressed: () {},
             icon: Icon(Icons.share),
             color: Colors.white,
           ),
           IconButton(
-            onPressed: (){},
+            onPressed: () {},
             icon: Icon(Icons.bookmark_border),
             color: Colors.white,
           ),
@@ -101,7 +113,7 @@ class _SingleScreenState extends State<SingleScreen> {
                       width: size.width,
 //                      color: addsColor,
                       decoration:
-                      BoxDecoration(border: Border.all(color: addsColor)),
+                          BoxDecoration(border: Border.all(color: addsColor)),
                       child: InkWell(
                         onTap: null,
                         child: Padding(
@@ -139,7 +151,7 @@ class _SingleScreenState extends State<SingleScreen> {
                       width: size.width,
                       margin: EdgeInsets.only(top: 8.0, bottom: 8.0),
                       decoration:
-                      BoxDecoration(border: Border.all(color: addsColor)),
+                          BoxDecoration(border: Border.all(color: addsColor)),
                       child: InkWell(
                         onTap: null,
                         child: Padding(
@@ -183,7 +195,6 @@ class _SingleScreenState extends State<SingleScreen> {
                           Container(
                             height: 40,
                             width: size.width,
-
                             child: Padding(
                               padding: EdgeInsets.all(8.0),
                               child: Text(
@@ -202,7 +213,7 @@ class _SingleScreenState extends State<SingleScreen> {
                       width: size.width,
                       margin: EdgeInsets.only(top: 8.0, bottom: 8.0),
                       decoration:
-                      BoxDecoration(border: Border.all(color: addsColor)),
+                          BoxDecoration(border: Border.all(color: addsColor)),
                       child: InkWell(
                         onTap: null,
                         child: Column(
@@ -229,102 +240,6 @@ class _SingleScreenState extends State<SingleScreen> {
                         style: detailTitleStyle,
                       ),
                     ),
-                    //Todo:List view news only title
-                    Card(
-                      child: InkWell(
-                        onTap: null,
-                        child: Container(
-                          height: 100,
-                          child: Row(
-                            children: <Widget>[
-                              Image.network(
-                                'https://assetsds.cdnedge.bluemix.net/sites/default/files/styles/very_big_1/public/feature/images/hasina-1wb.jpg?itok=SCGQfPuo',
-                                width: size.width / 2 - 30,
-                                fit: BoxFit.cover,
-                              ),
-                              SizedBox(
-                                width: 10,
-                              ),
-                              Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Text(
-                                      'মৃত সাঈদ যেভাবে জীবিত হয়ে ফিরে এল মৃত সাঈদ',
-                                      style: titlastyle,
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-
-                    Card(
-                      child: InkWell(
-                        onTap: null,
-                        child: Container(
-                          height: 100,
-                          child: Row(
-                            children: <Widget>[
-                              Image.network(
-                                'https://paloimages.prothom-alo.com/contents/cache/images/640x359x1/uploads/media/2019/09/03/bcd0d7db273386be243a35675da6d16b-5d6dfddf3030d.jpg',
-                                width: size.width / 2 - 30,
-                                fit: BoxFit.cover,
-                              ),
-                              SizedBox(
-                                width: 10,
-                              ),
-                              Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Text(
-                                      'মৃত সাঈদ যেভাবে জীবিত হয়ে ফিরে এল মৃত সাঈদ',
-                                      style: titlastyle,
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-
-                    Card(
-                      child: InkWell(
-                        onTap: null,
-                        child: Container(
-                          height: 100,
-                          child: Row(
-                            children: <Widget>[
-                              Image.network(
-                                'https://paloimages.prothom-alo.com/contents/cache/images/640x359x1/uploads/media/2019/09/03/bcd0d7db273386be243a35675da6d16b-5d6dfddf3030d.jpg',
-                                width: size.width / 2 - 30,
-                                fit: BoxFit.cover,
-                              ),
-                              SizedBox(
-                                width: 10,
-                              ),
-                              Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Text(
-                                      'মৃত সাঈদ যেভাবে জীবিত হয়ে ফিরে এল মৃত সাঈদ',
-                                      style: titlastyle,
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
 
                     //related topics
                     Padding(
@@ -335,7 +250,7 @@ class _SingleScreenState extends State<SingleScreen> {
                       ),
                     ),
                     //todo:related colors
-                    RelatedNews(),
+//                    RelatedNews(),
                     footer,
                   ],
                 ),

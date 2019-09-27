@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cnn_news_app/helper/helper.dart';
+import 'package:cnn_news_app/helper/teb_datas.dart';
 
 class TabViewScreen extends StatefulWidget {
   @override
@@ -29,35 +30,23 @@ class _TabViewScreenState extends State<TabViewScreen> {
             onPressed: () {},
           ),
         ],
+        bottom: TabBar(
+          onTap: (index) {
+            setState(() {
+              print(index);
+            });
+          },
+          tabs: tablBarList,
+          isScrollable: true,
+          indicatorColor: primaryColor,
+          indicatorWeight: 2.0,
+        ),
       ),
+      body:  TabBarView(
+              children: tabViewPage,
+            ),
     );
   }
 }
 
 
-//Column(
-   //   children: <Widget>[
-//            Card(
-//              elevation: 4.0,
-//              child: TabBar(
-//                tabs: tablBarList,
-//                onTap: (index) {
-//                  print(index);
-//                },
-//                isScrollable: true,
-//                indicatorColor: primaryColor,
-//                indicatorWeight: 2.0,
-//              ),
-//            ),
-//            Container(
-//              height: size.height,
-//              width: size.width,
-//              child: TabBarView(
-//                children: tabViewPage,
-//              ),
-//            ),
-//            TabBarView(
-//              children: tabViewPage,
-//            ),
-//      ],
-//    );
