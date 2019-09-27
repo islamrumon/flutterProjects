@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f489d9e5-6d0e-4eff-ab70-4046235a0372" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_news_app/lib/helper/helper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/lib/helper/helper.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_news_app/lib/helper/navigation_bar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/lib/helper/navigation_bar.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_news_app/lib/helper/news.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/lib/helper/news.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_news_app/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_news_app/lib/screen/search_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/lib/screen/search_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_news_app/lib/screen/setting_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/lib/screen/setting_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_news_app/lib/screen/single_news_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/lib/screen/single_news_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_news_app/lib/screen/style.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/lib/screen/style.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_news_app/lib/screen/tab_view_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/lib/screen/tab_view_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_news_app/lib/widget/app_bar_custom.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/lib/widget/app_bar_custom.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_news_app/lib/widget/related_news.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/lib/widget/related_news.dart" afterDir="false" />
-    </list>
+    <list default="true" id="f489d9e5-6d0e-4eff-ab70-4046235a0372" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +83,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="20" />
     <option name="y" value="32" />
     <option name="width" value="1019" />
@@ -182,8 +162,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="32" width="1019" height="655" extended-state="1" />
-    <editor active="true" />
+    <frame x="20" y="32" width="1019" height="655" extended-state="0" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.3368092" />
