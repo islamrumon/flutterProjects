@@ -15,7 +15,6 @@ class _SearchScrennState extends State<SearchScrenn> {
   List filerResult = [];
   int i = 0;
 
-
   searchNews(str) {
     var exist = str.length > 0 ? true : false;
     if (exist) {
@@ -48,14 +47,24 @@ class _SearchScrennState extends State<SearchScrenn> {
       body: Column(
         children: <Widget>[
           Container(
-            color: Colors.grey,
+//            color: Colors.grey,
             padding: EdgeInsets.all(10),
-            child: TextField(
+            child: TextFormField(
+              style: TextStyle(
+                color: Colors.black,
+                fontSize: 24,
+              ),
               cursorColor: primaryColor,
               decoration: InputDecoration(
+                fillColor: Colors.white,
+                filled: true,
+                suffixIcon: FlatButton(
+                  onPressed: () {},
+                  child: Text("Clear"),
+                ),
                 contentPadding: EdgeInsets.symmetric(vertical: 1.0),
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: primaryColor, width: 2.0),
+                  borderSide: BorderSide(color: Colors.white, width: 2.0),
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),
                 focusedBorder: OutlineInputBorder(
@@ -66,14 +75,6 @@ class _SearchScrennState extends State<SearchScrenn> {
                   Icons.search,
                   color: primaryColor,
                 ),
-                suffix: IconButton(
-                  icon: Icon(Icons.cancel),
-                  onPressed: () {
-                    setState(() {
-                      searchNews("");
-                    });
-                  },
-                ),
               ),
               onChanged: (str) {
                 setState(() {
@@ -83,16 +84,17 @@ class _SearchScrennState extends State<SearchScrenn> {
                 print(str);
               },
             ),
+
+//                         validator: (name) => name.length <4 ? 'Up to 4 Letter': null,
           ),
           Expanded(
             child: ListView.builder(
               itemBuilder: (BuildContext context, int index) {
-               return Text('dg');
+                return Text('dg');
               },
               itemCount: listOfNews.length == 0 ? 0 : listOfNews.length,
             ),
           ),
-
         ],
       ),
     );

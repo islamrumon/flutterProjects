@@ -15,7 +15,7 @@ import 'package:flutter/material.dart';
 final pageSource =[
   TabViewScreen(),
   SearchScrenn(),
-  Text("natok"),
-  Text("natok"),
+  BookmarkScreen(),
+  SettingScreen(),
 ];
 
