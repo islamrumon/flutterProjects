@@ -253,7 +253,70 @@ class _ScreensState extends State<Screens> {
                   ),
                 ),
               ),
-            )
+            ),
+
+            Padding(
+              padding: const EdgeInsets.all(3.0),
+              child: InkWell(
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (BuildContext context) => SingleScreen()));
+                },
+                child: Card(
+                  elevation: 8.0,
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        height: 220,
+                        width: size.width,
+                        color: Colors.white,
+                        child: Stack(
+                          alignment: Alignment.bottomLeft,
+                          children: <Widget>[
+                            Image.network(
+                              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPc4r0CCFGcUXkQ6Bqi3SC5lb-QRx6TDRCbUffoLscw95HNiqG",
+                              fit: BoxFit.cover,
+                              width: size.width,
+                            ),
+                          ],
+                        ),
+                      ),
+                      Container(
+                        height: 100,
+                        width: size.width,
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            children: <Widget>[
+                              Text("How to add Border to a raised button? How to add Border to a raised button?",),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: <Widget>[
+                                  Text('facebook.com'),
+                                  RaisedButton(
+                                    onPressed: () {},
+                                    child: Text("Visit Site"),
+                                    elevation: 0,
+                                    color: Colors.white,
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius:BorderRadius.circular(10.0),
+                                      side: BorderSide(color: Colors.grey),
+                                    ),
+
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
           ],
         ),
       ),
