@@ -15,6 +15,11 @@ class _SearchScrennState extends State<SearchScrenn> {
   List filerResult = [];
   int i = 0;
 
+  final deactiveText = TextStyle(color: Colors.black);
+  final activeText = TextStyle(color: Colors.white);
+  final deactiveButton = Colors.white;
+  final activeButton = Colors.black;
+
   searchNews(str) {
     var exist = str.length > 0 ? true : false;
     if (exist) {
@@ -45,9 +50,9 @@ class _SearchScrennState extends State<SearchScrenn> {
         ),
       ),
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Container(
-//            color: Colors.grey,
             padding: EdgeInsets.all(10),
             child: TextFormField(
               style: TextStyle(
@@ -64,7 +69,7 @@ class _SearchScrennState extends State<SearchScrenn> {
                 ),
                 contentPadding: EdgeInsets.symmetric(vertical: 1.0),
                 enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white, width: 2.0),
+                  borderSide: BorderSide(color: primaryColor, width: 2.0),
                   borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),
                 focusedBorder: OutlineInputBorder(
@@ -84,17 +89,383 @@ class _SearchScrennState extends State<SearchScrenn> {
                 print(str);
               },
             ),
-
-//                         validator: (name) => name.length <4 ? 'Up to 4 Letter': null,
           ),
-          Expanded(
-            child: ListView.builder(
-              itemBuilder: (BuildContext context, int index) {
-                return Text('dg');
-              },
-              itemCount: listOfNews.length == 0 ? 0 : listOfNews.length,
+          Container(
+            padding: EdgeInsets.all(8.0),
+            child: Text("123456 results",),
+          ),
+          Container(
+            padding: EdgeInsets.all(8.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                RaisedButton(
+                  onPressed: (){},
+                  child: Text("All",style: activeText,),
+                  color: activeButton,
+                  shape: RoundedRectangleBorder(
+                    borderRadius:BorderRadius.only(topLeft: Radius.circular(10),bottomLeft: Radius.circular(10)),
+                    side: BorderSide(color: Colors.black,width: 2),
+                  ),
+                ),
+                RaisedButton(
+                  onPressed: (){},
+                  color: deactiveButton,
+                  shape: RoundedRectangleBorder(
+                    side: BorderSide(color: Colors.black,width: 2),
+                  ),
+                  child: Text("Politics",style: deactiveText,),
+                ),
+                RaisedButton(
+                  onPressed: (){},
+                  color: deactiveButton,
+                  shape: RoundedRectangleBorder(
+                    side: BorderSide(color: Colors.black,width: 2),
+                  ),
+                  child: Text("Social",style: deactiveText,),
+                ),
+                RaisedButton(
+                  onPressed: (){},
+                  child: Text("Galaryis",style: deactiveText,),
+                  color: deactiveButton,
+                  shape: RoundedRectangleBorder(
+                    borderRadius:BorderRadius.only(topRight: Radius.circular(10),bottomRight: Radius.circular(10)),
+                    side: BorderSide(color: Colors.black,width: 2),
+                  ),
+                ),
+              ],
             ),
           ),
+          Expanded(
+            child: Container(
+              child: SingleChildScrollView(
+                child: Column(
+                  children: <Widget>[
+                    Card(
+                      child: InkWell(
+                        onTap: (){},
+                        child: Padding(
+                          padding:  EdgeInsets.all(8.0),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Container(
+                                child: Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text("The White House is frenetically throwing up road blocks in a belated strategy to slow the Democratic impeachment machine",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 16),),
+                                      Padding(
+                                        padding:EdgeInsets.only(top:8.0,bottom: 8.0),
+                                        child: Text("Share on Sep 20,2090",style: TextStyle(fontSize: 11),),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              IconButton(
+                                onPressed: (){},
+                                icon: Icon(Icons.camera),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      child: InkWell(
+                        onTap: (){},
+                        child: Padding(
+                          padding:  EdgeInsets.all(8.0),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Container(
+                                child: Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text("The White House is frenetically throwing up road blocks in a belated strategy to slow the Democratic impeachment machine",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 16),),
+                                      Padding(
+                                        padding:EdgeInsets.only(top:8.0,bottom: 8.0),
+                                        child: Text("Share on Sep 20,2090",style: TextStyle(fontSize: 11),),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              IconButton(
+                                onPressed: (){},
+                                icon: Icon(Icons.camera),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      child: InkWell(
+                        onTap: (){},
+                        child: Padding(
+                          padding:  EdgeInsets.all(8.0),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Container(
+                                child: Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text("The White House is frenetically throwing up road blocks in a belated strategy to slow the Democratic impeachment machine",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 16),),
+                                      Padding(
+                                        padding:EdgeInsets.only(top:8.0,bottom: 8.0),
+                                        child: Text("Share on Sep 20,2090",style: TextStyle(fontSize: 11),),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              IconButton(
+                                onPressed: (){},
+                                icon: Icon(Icons.camera),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      child: InkWell(
+                        onTap: (){},
+                        child: Padding(
+                          padding:  EdgeInsets.all(8.0),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Container(
+                                child: Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text("The White House is frenetically throwing up road blocks in a belated strategy to slow the Democratic impeachment machine",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 16),),
+                                      Padding(
+                                        padding:EdgeInsets.only(top:8.0,bottom: 8.0),
+                                        child: Text("Share on Sep 20,2090",style: TextStyle(fontSize: 11),),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              IconButton(
+                                onPressed: (){},
+                                icon: Icon(Icons.camera),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      child: InkWell(
+                        onTap: (){},
+                        child: Padding(
+                          padding:  EdgeInsets.all(8.0),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Container(
+                                child: Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text("The White House is frenetically throwing up road blocks in a belated strategy to slow the Democratic impeachment machine",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 16),),
+                                      Padding(
+                                        padding:EdgeInsets.only(top:8.0,bottom: 8.0),
+                                        child: Text("Share on Sep 20,2090",style: TextStyle(fontSize: 11),),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              IconButton(
+                                onPressed: (){},
+                                icon: Icon(Icons.camera),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      child: InkWell(
+                        onTap: (){},
+                        child: Padding(
+                          padding:  EdgeInsets.all(8.0),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Container(
+                                child: Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text("The White House is frenetically throwing up road blocks in a belated strategy to slow the Democratic impeachment machine",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 16),),
+                                      Padding(
+                                        padding:EdgeInsets.only(top:8.0,bottom: 8.0),
+                                        child: Text("Share on Sep 20,2090",style: TextStyle(fontSize: 11),),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              IconButton(
+                                onPressed: (){},
+                                icon: Icon(Icons.camera),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      child: InkWell(
+                        onTap: (){},
+                        child: Padding(
+                          padding:  EdgeInsets.all(8.0),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Container(
+                                child: Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text("The White House is frenetically throwing up road blocks in a belated strategy to slow the Democratic impeachment machine",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 16),),
+                                      Padding(
+                                        padding:EdgeInsets.only(top:8.0,bottom: 8.0),
+                                        child: Text("Share on Sep 20,2090",style: TextStyle(fontSize: 11),),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              IconButton(
+                                onPressed: (){},
+                                icon: Icon(Icons.camera),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      child: InkWell(
+                        onTap: (){},
+                        child: Padding(
+                          padding:  EdgeInsets.all(8.0),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Container(
+                                child: Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text("The White House is frenetically throwing up road blocks in a belated strategy to slow the Democratic impeachment machine",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 16),),
+                                      Padding(
+                                        padding:EdgeInsets.only(top:8.0,bottom: 8.0),
+                                        child: Text("Share on Sep 20,2090",style: TextStyle(fontSize: 11),),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              IconButton(
+                                onPressed: (){},
+                                icon: Icon(Icons.camera),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      child: InkWell(
+                        onTap: (){},
+                        child: Padding(
+                          padding:  EdgeInsets.all(8.0),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Container(
+                                child: Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text("The White House is frenetically throwing up road blocks in a belated strategy to slow the Democratic impeachment machine",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 16),),
+                                      Padding(
+                                        padding:EdgeInsets.only(top:8.0,bottom: 8.0),
+                                        child: Text("Share on Sep 20,2090",style: TextStyle(fontSize: 11),),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              IconButton(
+                                onPressed: (){},
+                                icon: Icon(Icons.camera),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Card(
+                      child: InkWell(
+                        onTap: (){},
+                        child: Padding(
+                          padding:  EdgeInsets.all(8.0),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: <Widget>[
+                              Container(
+                                child: Expanded(
+                                  child: Column(
+                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    children: <Widget>[
+                                      Text("The White House is frenetically throwing up road blocks in a belated strategy to slow the Democratic impeachment machine",style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 16),),
+                                      Padding(
+                                        padding:EdgeInsets.only(top:8.0,bottom: 8.0),
+                                        child: Text("Share on Sep 20,2090",style: TextStyle(fontSize: 11),),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                              IconButton(
+                                onPressed: (){},
+                                icon: Icon(Icons.camera),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+
+//todo:this is for list view
+//          Expanded(
+//            child: ListView.builder(
+//              itemBuilder: (BuildContext context, int index) {
+//                return Text('dg');
+//              },
+//              itemCount: listOfNews.length == 0 ? 0 : listOfNews.length,
+//            ),
+//          ),
         ],
       ),
     );
