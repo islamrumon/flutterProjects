@@ -46,31 +46,23 @@ class _SingleScreenState extends State<SingleScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
-              Card(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: <Widget>[
-                    Image.network(
-                      'https://paloimages.prothom-alo.com/contents/cache/images/640x359x1/uploads/media/2019/09/03/bcd0d7db273386be243a35675da6d16b-5d6dfddf3030d.jpg',
-                      height: 200,
-                      fit: BoxFit.cover,
-                      width: size.width,
+              Image.network(
+                'https://www.ittefaq.com.bd/assets/news_photos/2019/10/04/image-94088-1570126799.jpg',
+                height: 200,
+                fit: BoxFit.cover,
+                width: size.width,
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      'Four killed in knife attack at Paris police headquarters',
+                      style: detailstextStyle,
                     ),
-                    Container(
-                      height: 40,
-                      width: size.width,
-//                      color: detailsBootomColors,
-                      child: Padding(
-                        padding: EdgeInsets.all(8.0),
-                        child: Text(
-                          'মৃত সাঈদ যেভাবে জীবিত হয়ে ফিরে এল মৃত সাঈদ ৃত সাঈদ যেভাবে জীবিত হয়ে ফিরে এল মৃত সাঈদ ৃত সাঈদ যেভাবে জীবিত হয়ে ফিরে এল মৃত সাঈদ সাঈদ যেভাবে জীবিত হয়ে ফিরে এল মৃত সাঈদ সাঈদ যেভাবে জীবিত হয়ে ফিরে এল মৃত সাঈদ সাঈদ যেভাবে জীবিত হয়ে ফিরে এল মৃত সাঈদ',
-                          overflow: TextOverflow.ellipsis,
-                          style: detailstextStyle,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+                  ),
+                ],
               ),
               Container(
                 margin: EdgeInsets.all(8.0),
@@ -80,28 +72,17 @@ class _SingleScreenState extends State<SingleScreen> {
                   children: <Widget>[
                     //todo:all title
                     Text(
-                      'ৃত সাঈদ যেভাবে জীবিত হয়ে ফিরে এল মৃত সাঈদ ৃত সাঈদ যেভাবে জৃত সাঈদ ৃত সাঈদ যেভাবে জ',
+                      'By Saskya Vandoorne and Antoine Crouin, CNN',
                       style: detailTitleStyle,
                     ),
-                    Padding(
-                      padding: const EdgeInsets.only(top: 8.0, bottom: 8.0),
-                      child: Row(
-                        children: <Widget>[
-                          Text(
-                            "2m",
-                            style: TextStyle(color: primaryColor),
-                          ),
-                          SizedBox(
-                            width: 20,
-                            child: Text('  |'),
-                          ),
-                          Text(
-                            "Dhaka",
-                            style: TextStyle(color: primaryColor),
-                          ),
-                        ],
-                      ),
+                    Text(
+                      "Updated 1 hour ago Oct 4, 2019",
+                      style: TextStyle(color: Colors.black,fontSize: 12,),
                     ),
+                    SizedBox(
+                      height: 20,
+                    ),
+
                     Text(
                       'You should wrap your Container in a Flexible to let your Row know that its ok for the Container to be narrower than its intrinsic width. Expanded will also work',
                       style: textDetailsbold,

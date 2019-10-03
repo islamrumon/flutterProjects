@@ -4,34 +4,34 @@ import 'package:cnn_news_app/helper/helper.dart';
 
 final tablBarList = [
   Tab(
-    child: Text("Top Stories 1",style: tabBarTestStyle,),
+    child: Text("Top Stories ",style: tabBarTestStyle,),
   ),
   Tab(
-    child: Text("Top Stories 2",style: tabBarTestStyle),
+    child: Text("Bangladesh",style: tabBarTestStyle),
   ),
   Tab(
-    child: Text("Top Stories 3",style: tabBarTestStyle),
+    child: Text("India",style: tabBarTestStyle),
   ),
   Tab(
-    child: Text("Top Stories 4",style: tabBarTestStyle),
+    child: Text("Pakistha",style: tabBarTestStyle),
   ),
   Tab(
-    child: Text("Top Stories 5",style: tabBarTestStyle),
+    child: Text("USA",style: tabBarTestStyle),
   ),
   Tab(
-    child: Text("Top Stories 6",style: tabBarTestStyle),
+    child: Text("UK",style: tabBarTestStyle),
   ),
   Tab(
-    child: Text("Top Stories 7",style: tabBarTestStyle),
+    child: Text("London",style: tabBarTestStyle),
   ),
   Tab(
-    child: Text("Top Stories 8",style: tabBarTestStyle),
+    child: Text("Brazil",style: tabBarTestStyle),
   ),
   Tab(
-    child: Text("Top Stories 9",style: tabBarTestStyle),
+    child: Text("Finland",style: tabBarTestStyle),
   ),
   Tab(
-    child: Text("Top Stories 0",style: tabBarTestStyle),
+    child: Text("Asia",style: tabBarTestStyle),
   ),
 ];
 

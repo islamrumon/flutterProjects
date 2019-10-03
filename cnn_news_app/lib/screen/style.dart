@@ -16,23 +16,23 @@ class _ScreensState extends State<Screens> {
     return SafeArea(
       child: SingleChildScrollView(
         child: Column(
-//          crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
+            //First News
             Padding(
               padding: const EdgeInsets.all(3.0),
-              child: InkWell(
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (BuildContext context) => SingleScreen()));
-                },
-                child: Card(
-                  elevation: 8.0,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Container(
+              child: Card(
+                elevation: 8.0,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (BuildContext context) => SingleScreen()));
+                      },
+                      child: Container(
                         height: 220,
                         width: size.width,
                         color: Colors.white,
@@ -43,148 +43,75 @@ class _ScreensState extends State<Screens> {
                               decoration: new BoxDecoration(
                                   image: new DecorationImage(
                                       image: NetworkImage(
-                                          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPc4r0CCFGcUXkQ6Bqi3SC5lb-QRx6TDRCbUffoLscw95HNiqG"),
+                                          "https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/01/07/10/GettyImages-111601909.jpg?w968h681"),
                                       fit: BoxFit.cover)),
                               child: BackdropFilter(
                                 filter: prefix0.ImageFilter.blur(
-                                    sigmaX: 1.0, sigmaY: 1.0),
+                                    sigmaX: 0, sigmaY: 0),
                                 child: new Container(
                                   decoration: new BoxDecoration(
-                                      color: Colors.black.withOpacity(0.3)),
+                                      color: Colors.black.withOpacity(0)),
                                 ),
                               ),
                             ),
                             Positioned(
-                                child: Text(
-                              ' sf This is title to bangladesh india pakistan china dubai',
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                              'Donald John Trump is the 45th and current president of the United States. ',
                               style: titleTextStyle,
-                            )),
+                            ),
+                                )),
                           ],
                         ),
                       ),
-                      Container(
+                    ),
 
-                        width: size.width,
-                        child: Column(
+                    Container(
+                      height: 50,
+                      child: Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
-                            Container(
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: <Widget>[
-                                  Text(
-                                    "",
-                                    style: timeTextStyle,
-                                    textAlign: TextAlign.start,
-                                  ),
-                                  Row(
-                                    children: <Widget>[
-                                      IconButton(
-                                        onPressed: () {},
-                                        icon: bookmark,
-                                      ),
-                                      IconButton(
-                                        onPressed: () {},
-                                        icon: shareicon,
-                                      ),
-                                    ],
-                                  ),
-                                ],
-                              ),
+                            Text(
+                              "23m",
+                              style: timeTextStyle,
                             ),
-                            Container(
-                              decoration: BoxDecoration(
-                                  border: Border(
-                                bottom: BorderSide(
-                                  width: 1,
-                                  color: Colors.grey,
+                            Row(
+                              children: <Widget>[
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: bookmark,
                                 ),
-                              )),
-                              margin: EdgeInsets.only(left: 10,right: 10),
-                            ),
-                            Container(
-                              padding: EdgeInsets.only(left: 8,right: 8,top: 8,bottom: 4),
-                              child: Row(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: <Widget>[
-                                  IconButton(
-                                    icon: Icon(Icons.save),
-                                    onPressed: (){},
-                                    color: Colors.grey,
-                                  ),
-                                  Expanded(child: Text("The White House is  strategy to slow the Democratic impeachment machine",style: TextStyle(color: Colors.black,fontWeight: FontWeight.w600,fontSize: 16),)),
-                                ],
-                              ),
-                            ),
-                            Container(
-                              padding: EdgeInsets.only(left: 8,right: 8,top: 8,bottom: 4),
-                              child: Row(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: <Widget>[
-                                  IconButton(
-                                    icon: Icon(Icons.save),
-                                    onPressed: (){},
-                                    color: Colors.grey,
-                                  ),
-                                  Expanded(child: Text("The White House is  strategy to slow the Democratic impeachment machine",style: TextStyle(color: Colors.black,fontWeight: FontWeight.w600,fontSize: 16),)),
-                                ],
-                              ),
-                            ),
-                            Container(
-                              padding: EdgeInsets.only(left: 8,right: 8,top: 8,bottom: 4),
-                              child: Row(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: <Widget>[
-                                  IconButton(
-                                    icon: Icon(Icons.save),
-                                    onPressed: (){},
-                                    color: Colors.grey,
-                                  ),
-                                  Expanded(child: Text("The White House is  strategy to slow the Democratic impeachment machine",style: TextStyle(color: Colors.black,fontWeight: FontWeight.w600,fontSize: 16),)),
-                                ],
-                              ),
-                            ),
-                            Container(
-                              padding: EdgeInsets.only(left: 8,right: 8,top: 8,bottom: 4),
-                              child: Row(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                children: <Widget>[
-                                  IconButton(
-                                    icon: Icon(Icons.save),
-                                    onPressed: (){},
-                                    color: Colors.grey,
-                                  ),
-                                  Expanded(child: Text("The White House is  strategy to slow the Democratic impeachment machine",style: TextStyle(color: Colors.black,fontWeight: FontWeight.w600,fontSize: 16),)),
-                                ],
-                              ),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: shareicon,
+                                ),
+                              ],
                             ),
                           ],
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
             Padding(
               padding: const EdgeInsets.all(3.0),
-              child: InkWell(
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (BuildContext context) => SingleScreen()));
-                },
-                child: Card(
-                  elevation: 8.0,
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Container(
+              child: Card(
+                elevation: 8.0,
+                child: Column(
+                  children: <Widget>[
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (BuildContext context) => SingleScreen()));
+                      },
+                      child: Container(
                         height: 220,
                         width: size.width,
                         color: Colors.white,
@@ -195,84 +122,18 @@ class _ScreensState extends State<Screens> {
                               decoration: new BoxDecoration(
                                   image: new DecorationImage(
                                       image: NetworkImage(
-                                          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPc4r0CCFGcUXkQ6Bqi3SC5lb-QRx6TDRCbUffoLscw95HNiqG"),
+                                          "https://www.ittefaq.com.bd/assets/news_photos/2019/10/03/image-93897-1570113787.jpg"),
                                       fit: BoxFit.cover)),
                               child: BackdropFilter(
                                 filter: prefix0.ImageFilter.blur(
-                                    sigmaX: 1.0, sigmaY: 1.0),
+                                    sigmaX: .5, sigmaY: .5),
                                 child: new Container(
                                   decoration: new BoxDecoration(
-                                      color: Colors.black.withOpacity(0.3)),
+                                      color: Colors.black.withOpacity(0.1)),
                                 ),
                               ),
                             ),
-                            Positioned(
-                                child: Text(
-                              ' sf This is title to bangladesh india pakistan china dubai',
-                              style: titleTextStyle,
-                            )),
-                          ],
-                        ),
-                      ),
-                      Container(
-                        height: 50,
-                        width: size.width,
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: <Widget>[
-                              Text(
-                                "23m",
-                                style: timeTextStyle,
-                                textAlign: TextAlign.start,
-                              ),
-                              Row(
-                                children: <Widget>[
-                                  IconButton(
-                                    onPressed: () {},
-                                    icon: bookmark,
-                                  ),
-                                  IconButton(
-                                    onPressed: () {},
-                                    icon: shareicon,
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(3.0),
-              child: InkWell(
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (BuildContext context) => SingleScreen()));
-                },
-                child: Card(
-                  elevation: 8.0,
-                  child: Column(
-                    children: <Widget>[
-                      Container(
-                        height: 220,
-                        width: size.width,
-                        color: Colors.white,
-                        child: Stack(
-                          alignment: Alignment.bottomLeft,
-                          children: <Widget>[
-                            Image.network(
-                              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPc4r0CCFGcUXkQ6Bqi3SC5lb-QRx6TDRCbUffoLscw95HNiqG",
-                              fit: BoxFit.cover,
-                              width: size.width,
-                            ),
+
                             Center(
                               child: Icon(
                                 Icons.play_circle_outline,
@@ -281,71 +142,84 @@ class _ScreensState extends State<Screens> {
                               ),
                             ),
                             Positioned(
-                                child: Text(
-                              'This is title to bangladesh india pakistan china dubai',
+                                child: Padding(
+                                  padding: const EdgeInsets.all(8.0),
+                                  child: Text(
+                              "Stay on top of Irans latest developments on the ground with Al Jazeera's fact-based news",
                               style: titleTextStyle,
-                            ))
+                            ),
+                                ))
                           ],
                         ),
                       ),
-                      Container(
-                        height: 50,
-                        width: size.width,
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: <Widget>[
-                              Text(
-                                "",
-                                style: timeTextStyle,
-                                textAlign: TextAlign.start,
-                              ),
-                              Row(
-                                children: <Widget>[
-                                  IconButton(
-                                    onPressed: () {},
-                                    icon: bookmark,
-                                  ),
-                                  IconButton(
-                                    onPressed: () {},
-                                    icon: shareicon,
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
+                    ),
+                    Container(
+                      height: 50,
+
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Text(
+                              "",
+                              style: timeTextStyle,
+
+                            ),
+                            Row(
+                              children: <Widget>[
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: bookmark,
+                                ),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: shareicon,
+                                ),
+                              ],
+                            ),
+                          ],
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
             Padding(
               padding: EdgeInsets.all(3.0),
-              child: InkWell(
-                onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (BuildContext context) => SingleScreen()));
-                },
-                child: Card(
-                  elevation: 8.0,
-                  child: Column(
-                    children: <Widget>[
-                      Container(
+              child: Card(
+                elevation: 8.0,
+                child: Column(
+                  children: <Widget>[
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (BuildContext context) => SingleScreen()));
+                      },
+                      child: Container(
                         height: 220,
                         width: size.width,
                         color: Colors.white,
                         child: Stack(
                           alignment: Alignment.bottomLeft,
                           children: <Widget>[
-                            Image.network(
-                              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPc4r0CCFGcUXkQ6Bqi3SC5lb-QRx6TDRCbUffoLscw95HNiqG",
-                              fit: BoxFit.cover,
-                              width: size.width,
+                            Container(
+                              decoration: new BoxDecoration(
+                                  image: new DecorationImage(
+                                      image: NetworkImage(
+                                          "https://www.ittefaq.com.bd/assets/news_photos/2019/10/03/image-93989-1570116840.jpg"),
+                                      fit: BoxFit.cover)),
+                              child: BackdropFilter(
+                                filter: prefix0.ImageFilter.blur(
+                                    sigmaX: .5, sigmaY: .5),
+                                child: new Container(
+                                  decoration: new BoxDecoration(
+                                      color: Colors.black.withOpacity(0.1)),
+                                ),
+                              ),
                             ),
                             Positioned(
                               top: 0,
@@ -355,9 +229,9 @@ class _ScreensState extends State<Screens> {
                                 height: 25,
                                 child: Center(
                                     child: Text(
-                                  "Politics",
-                                  style: TextStyle(color: Colors.white),
-                                )),
+                                      "Politics",
+                                      style: TextStyle(color: Colors.white),
+                                    )),
                               ),
                             ),
                             Center(
@@ -367,44 +241,47 @@ class _ScreensState extends State<Screens> {
                                 color: Colors.white,
                               ),
                             ),
-                            Text(
-                              'This is title to bangladesh india pakistan china dubai',
-                              style: titleTextStyle,
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                'ভারত-পাকিস্তান যুদ্ধ বাধলে মারা যাবে সাড়ে ১২ কোটি!',
+                                style: titleTextStyle,
+                              ),
                             )
                           ],
                         ),
                       ),
-                      Container(
-                        height: 50,
-                        width: size.width,
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: <Widget>[
-                              Text(
-                                "",
-                                style: timeTextStyle,
-                                textAlign: TextAlign.start,
-                              ),
-                              Row(
-                                children: <Widget>[
-                                  IconButton(
-                                    onPressed: () {},
-                                    icon: bookmark,
-                                  ),
-                                  IconButton(
-                                    onPressed: () {},
-                                    icon: shareicon,
-                                  ),
-                                ],
-                              ),
-                            ],
-                          ),
+                    ),
+                    Container(
+                      height: 50,
+                      width: size.width,
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: <Widget>[
+                            Text(
+                              "",
+                              style: timeTextStyle,
+                              textAlign: TextAlign.start,
+                            ),
+                            Row(
+                              children: <Widget>[
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: bookmark,
+                                ),
+                                IconButton(
+                                  onPressed: () {},
+                                  icon: shareicon,
+                                ),
+                              ],
+                            ),
+                          ],
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
@@ -469,6 +346,182 @@ class _ScreensState extends State<Screens> {
                       ),
                     ],
                   ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.all(3.0),
+              child: Card(
+                elevation: 8.0,
+                child: Column(
+                  children: <Widget>[
+                    InkWell(
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (BuildContext context) => SingleScreen()));
+                      },
+                      child: Container(
+                        height: 220,
+                        width: size.width,
+                        color: Colors.white,
+                        child: Stack(
+                          alignment: Alignment.bottomLeft,
+                          children: <Widget>[
+                            Container(
+                              decoration: new BoxDecoration(
+                                  image: new DecorationImage(
+                                      image: NetworkImage(
+                                          "https://www.ittefaq.com.bd/assets/news_photos/2019/10/03/image-94049-1570124901.jpg"),
+                                      fit: BoxFit.cover)),
+                              child: BackdropFilter(
+                                filter: prefix0.ImageFilter.blur(
+                                    sigmaX: .5, sigmaY: .5),
+                                child: new Container(
+                                  decoration: new BoxDecoration(
+                                      color: Colors.black.withOpacity(0.1)),
+                                ),
+                              ),
+                            ),
+                            Positioned(
+                              top: 0,
+                              child: Container(
+                                color: primaryColor,
+                                width: 80,
+                                height: 25,
+                                child: Center(
+                                    child: Text(
+                                      "Politics",
+                                      style: TextStyle(color: Colors.white),
+                                    )),
+                              ),
+                            ),
+                            Center(
+                              child: Icon(
+                                Icons.play_circle_outline,
+                                size: 80,
+                                color: Colors.white,
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                'দক্ষিণ কোরিয়ায় টাইফুন মিতাগর কেড়ে নিল ৯ প্রাণ',
+                                style: titleTextStyle,
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+
+                    Container(
+
+                      width: size.width,
+                      child: Column(
+                        children: <Widget>[
+                          Container(
+                            child: Row(
+                              mainAxisAlignment:
+                              MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
+                                Text(
+                                  "",
+                                  style: timeTextStyle,
+                                  textAlign: TextAlign.start,
+                                ),
+                                Row(
+                                  children: <Widget>[
+                                    IconButton(
+                                      onPressed: () {},
+                                      icon: bookmark,
+                                    ),
+                                    IconButton(
+                                      onPressed: () {},
+                                      icon: shareicon,
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            decoration: BoxDecoration(
+                                border: Border(
+                                  bottom: BorderSide(
+                                    width: 1,
+                                    color: Colors.grey,
+                                  ),
+                                )),
+                            margin: EdgeInsets.only(left: 10,right: 10),
+                          ),
+                          Container(
+                            padding: EdgeInsets.only(left: 8,right: 8,top: 8,bottom: 4),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
+                                IconButton(
+                                  icon: Icon(Icons.assignment),
+                                  onPressed: (){},
+                                  color: Colors.grey,
+                                ),
+                                Expanded(
+                                    child:
+                                    Text("The White House is  strategy to slow the Democratic impeachment machine",style: praTextStyle,)),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: EdgeInsets.only(left: 8,right: 8,top: 8,bottom: 4),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
+                                IconButton(
+                                  icon: Icon(Icons.assignment),
+                                  onPressed: (){},
+                                  color: Colors.grey,
+                                ),
+                                Expanded(child: Text("The White House is  strategy to slow the Democratic impeachment machine",style: praTextStyle,)),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: EdgeInsets.only(left: 8,right: 8,top: 8,bottom: 4),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
+                                IconButton(
+                                  icon: Icon(Icons.assignment),
+                                  onPressed: (){},
+                                  color: Colors.grey,
+                                ),
+                                Expanded(child: Text("The White House is  strategy to slow the Democratic impeachment machine",style: praTextStyle,)),
+                              ],
+                            ),
+                          ),
+                          Container(
+                            padding: EdgeInsets.only(left: 8,right: 8,top: 8,bottom: 4),
+                            child: Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: <Widget>[
+                                IconButton(
+                                  icon: Icon(Icons.assignment),
+                                  onPressed: (){},
+                                  color: Colors.grey,
+                                ),
+                                Expanded(child: Text("The White House is  strategy to slow the Democratic impeachment machine",style: praTextStyle,)),
+                              ],
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
                 ),
               ),
             ),
