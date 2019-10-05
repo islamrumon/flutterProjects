@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f489d9e5-6d0e-4eff-ab70-4046235a0372" name="Default Changelist" comment="" />
+    <list default="true" id="f489d9e5-6d0e-4eff-ab70-4046235a0372" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../cnn_news_app/lib/widget/NewsVideoPlayer.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn_news_app.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn_news_app/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn_news_app/lib/helper/helper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/lib/helper/helper.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn_news_app/lib/screen/single_news_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/lib/screen/single_news_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn_news_app/lib/screen/style.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/lib/screen/style.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn_news_app/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn_news_app/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/pubspec.yaml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,11 +25,34 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_XL_API_29" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
               <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/widgets/horizontal_view.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/widgets/grid_news.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="12" selection-start-line="12" selection-end-line="13" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -39,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/screen/video_screen.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="19" column="24" selection-start-line="17" selection-start-column="23" selection-end-line="24" selection-end-column="14" />
+            <state relative-caret-position="120">
+              <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="38" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -84,8 +117,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="20" />
-    <option name="y" value="32" />
+    <option name="x" value="-9" />
+    <option name="y" value="38" />
     <option name="width" value="1019" />
     <option name="height" value="655" />
   </component>
@@ -95,6 +128,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -102,22 +136,10 @@
               <item name="bbc_clone_flutter" type="b2602c69:ProjectViewProjectNode" />
               <item name="bbc_clone_flutter" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="bbc_clone_flutter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbc_clone_flutter" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bbc_clone_flutter" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bbc_clone_flutter" type="462c0819:PsiDirectoryNode" />
-              <item name="lib" type="462c0819:PsiDirectoryNode" />
-              <item name="screen" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -126,7 +148,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cnn_news_app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -162,10 +184,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="32" width="1019" height="655" extended-state="0" />
+    <frame x="-9" y="38" width="1019" height="655" extended-state="0" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.34410843" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.36600626" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -205,6 +227,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/widgets/horizontal_view.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/widgets/grid_news.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="12" selection-start-line="12" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/screen/top_screen.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
@@ -214,16 +255,6 @@
             <element signature="e#690#2761#0" />
             <element signature="e#2796#3059#0" />
             <element signature="e#3077#5106#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/screen/video_screen.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="19" column="24" selection-start-line="17" selection-start-column="23" selection-end-line="24" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -248,6 +279,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/screen/live_screen.dart">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/screen/video_screen.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
