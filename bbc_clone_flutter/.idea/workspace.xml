@@ -2,15 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f489d9e5-6d0e-4eff-ab70-4046235a0372" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../cnn_news_app/lib/widget/NewsVideoPlayer.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/assets/fonts/Grenze/Grenze-Black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/assets/fonts/Grenze/Grenze-BlackItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/assets/fonts/Grenze/Grenze-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/assets/fonts/Grenze/Grenze-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/assets/fonts/Grenze/Grenze-ExtraBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/assets/fonts/Grenze/Grenze-ExtraBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/assets/fonts/Grenze/Grenze-ExtraLight.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/assets/fonts/Grenze/Grenze-ExtraLightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/assets/fonts/Grenze/Grenze-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/assets/fonts/Grenze/Grenze-Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/assets/fonts/Grenze/Grenze-LightItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/assets/fonts/Grenze/Grenze-Medium.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/assets/fonts/Grenze/Grenze-MediumItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/assets/fonts/Grenze/Grenze-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/assets/fonts/Grenze/Grenze-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/assets/fonts/Grenze/Grenze-SemiBoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/assets/fonts/Grenze/Grenze-Thin.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/assets/fonts/Grenze/Grenze-ThinItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/assets/fonts/Grenze/OFL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/lib/helper/services.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/lib/screens/home_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/lib/screens/setting_screen.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../the_telegraph_flutter/lib/screens/single_news_screen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_news_app.zip" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_news_app/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_news_app/lib/helper/helper.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/lib/helper/helper.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_news_app/lib/screen/single_news_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/lib/screen/single_news_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_news_app/lib/screen/style.dart" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/lib/screen/style.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_news_app/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/pubspec.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cnn_news_app/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../cnn_news_app/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/4.10.2/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/app.dill.track.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/zip-cache/WJjE6bC35QwgrrK5MFif7iiACfY=" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJavaRes/zip-cache/WJjE6bC35QwgrrK5MFif7iiACfY=" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJniLibs/merge-state" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJniLibs/merge-state" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJniLibs/zip-cache/WJjE6bC35QwgrrK5MFif7iiACfY=" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/incremental/debug-mergeJniLibs/zip-cache/WJjE6bC35QwgrrK5MFif7iiACfY=" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/1.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexBuilder/debug/__content__.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/dexMerger/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/dexMerger/debug/__content__.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/mergeJavaRes/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/mergeJavaRes/debug/__content__.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/app/intermediates/transforms/mergeJniLibs/debug/__content__.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/app/intermediates/transforms/mergeJniLibs/debug/__content__.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cnn_news_app.zip" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,14 +88,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/screen/top_screen.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="84" column="14" selection-start-line="84" selection-start-column="14" selection-end-line="84" selection-end-column="14" />
+            <state relative-caret-position="298">
+              <caret line="25" column="79" selection-start-line="24" selection-start-column="17" selection-end-line="25" selection-end-column="79" />
               <folding>
                 <element signature="e#0#61#0" expanded="true" />
-                <element signature="e#690#2761#0" />
                 <element signature="e#2796#3059#0" />
                 <element signature="e#3077#5106#0" />
               </folding>
@@ -72,11 +102,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/screen/video_screen.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="38" />
+            <state relative-caret-position="240">
+              <caret line="14" column="38" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="38" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -87,7 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/screen/single_screen.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="220">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -136,6 +167,17 @@
               <item name="bbc_clone_flutter" type="b2602c69:ProjectViewProjectNode" />
               <item name="bbc_clone_flutter" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="bbc_clone_flutter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbc_clone_flutter" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bbc_clone_flutter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bbc_clone_flutter" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+              <item name="screen" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -148,7 +190,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../the_telegraph_flutter" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -185,9 +227,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="38" width="1019" height="655" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.36600626" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.3826903" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
@@ -246,22 +289,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/screen/top_screen.dart">
+    <entry file="file://$PROJECT_DIR$/lib/screen/video_screen.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="84" column="14" selection-start-line="84" selection-start-column="14" selection-end-line="84" selection-end-column="14" />
+        <state relative-caret-position="240">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="38" />
           <folding>
-            <element signature="e#0#61#0" expanded="true" />
-            <element signature="e#690#2761#0" />
-            <element signature="e#2796#3059#0" />
-            <element signature="e#3077#5106#0" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/screen/single_screen.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="220">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -280,12 +321,14 @@
     <entry file="file://$PROJECT_DIR$/lib/screen/live_screen.dart">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/screen/video_screen.dart">
+    <entry file="file://$PROJECT_DIR$/lib/screen/top_screen.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="38" />
+        <state relative-caret-position="298">
+          <caret line="25" column="79" selection-start-line="24" selection-start-column="17" selection-end-line="25" selection-end-column="79" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#61#0" expanded="true" />
+            <element signature="e#2796#3059#0" />
+            <element signature="e#3077#5106#0" />
           </folding>
         </state>
       </provider>
