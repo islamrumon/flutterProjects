@@ -130,7 +130,7 @@ class _NewsScreensState extends State<NewsScreens> {
                 //this is image full width fullheight
                 Container(
                   child: Image.network(
-                    "https://paloimages.prothom-alo.com/contents/cache/images/640x359x1/uploads/media/2019/10/08/55d73a998e8c37068c8fdbd3434f3d24-5d9c0d85125ef.jpg",
+                    "https://paloimages.prothom-alo.com/contents/cache/images/640x359x1/uploads/media/2019/10/09/e124b9f4249d934c97f166e116f8f44a-5d9de33271962.png",
                     fit: BoxFit.cover,
                     width: size.width,
                   ),

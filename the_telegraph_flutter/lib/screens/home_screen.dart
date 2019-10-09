@@ -40,7 +40,7 @@ class _HomeScreenState extends State<HomeScreen>
       ),
       height: 50,
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           IconButton(
             icon: Icon(
@@ -159,6 +159,11 @@ class _HomeScreenState extends State<HomeScreen>
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "The Telegraph",
+      theme: ThemeData(focusColor: primaryColor2,
+        indicatorColor: primaryColor2,
+      backgroundColor: primaryColor2,
+        primaryColor: primaryColor2,
+      ),
       home: DefaultTabController(
         length: tabbarList.length,
         child: Scaffold(
@@ -170,6 +175,7 @@ class _HomeScreenState extends State<HomeScreen>
           drawer: Drawer(
             child: ListView(
               children: drawerList,
+
 
             ),
           ),

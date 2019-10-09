@@ -6,7 +6,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 final drawerEntityColor = Colors.white;
 final drawerTextStyle = TextStyle(fontWeight: FontWeight.bold,color: drawerEntityColor,fontSize: 18,fontFamily: 'Grenze-Regular');
 final primaryColor1 =Color(0xff0C2230);
-final primaryColor2 =Color(0xff0A394B);
+const primaryColor2 =Color(0xff0A394B);
 final primaryColor3 =Color(0xff038480);
 final primaryColor4Gold =Color(0xffC38419);
 final primaryColor5background=Color(0xffE2DDD9);
