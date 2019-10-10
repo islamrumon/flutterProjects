@@ -14,10 +14,19 @@ class _RegisterScreenState extends State<RegisterScreen> {
   bool _obscureText = true;
   bool button = false;
   bool active = false;
-  String fname;
-  String lname;
-  String email;
-  String password;
+  String _fname;
+  String _lname;
+  String _email;
+  String _password;
+
+  void _submit(){
+    if (_formKey.currentState.validate()) {
+      _formKey.currentState.save();
+      print(
+          "Email : $_email,Password: $_password, LastNamr: $_lname, Firstname: $_fname");
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -77,7 +86,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       child: Column(
                         children: <Widget>[
                           TextFormField(
-                            controller: _textFieldController,
+//                            controller: _textFieldController,
                             decoration: const InputDecoration(
                               labelText: 'First Name',
                               labelStyle: TextStyle(
@@ -89,23 +98,19 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                 ),
                               ),
                             ),
-                            onSaved: (String fname) {
-                              setState(() {
-                                print(fname);
-                                this.fname = fname;
-                              });
+                            onSaved: (fname) {
+                              _fname = fname;
                             },
-                            validator: (String fname) {
+                            validator: (fname) {
                               return fname.isEmpty
                                   ? 'First Name Is Required'
                                   : null;
                             },
                           ),
-
                           //Lastname
                           TextFormField(
-                            controller: _textFieldController,
-                            decoration: const InputDecoration(
+//                            controller: _textFieldController,
+                            decoration: InputDecoration(
                               labelText: 'Last Name',
                               labelStyle: TextStyle(
                                   color: primaryColor2,
@@ -116,23 +121,19 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                 ),
                               ),
                             ),
-                            onSaved: (String lname) {
-                              setState(() {
-                                print(lname);
-                                this.lname = lname;
-                              });
+                            onSaved: (lname) {
+                              _lname = lname;
                             },
-                            validator: (String lname) {
+                            validator: (lname) {
                               return lname.isEmpty
                                   ? 'Last Name Is Required'
                                   : null;
                             },
                           ),
-
                           //email
                           TextFormField(
-                            controller: _textFieldController,
-                            decoration: const InputDecoration(
+//                            controller: _textFieldController,
+                            decoration: InputDecoration(
                               labelText: 'Email',
                               labelStyle: TextStyle(
                                   color: primaryColor2,
@@ -143,24 +144,21 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                 ),
                               ),
                             ),
-                            onSaved: (String email) {
-                              setState(() {
-                                print(email);
-                                this.email = email;
-                              });
+                            onSaved: (email) {
+                              _email = email;
                             },
-                            validator: (String email) {
-                              return email.length < 6 &&
-                                  email.contains('@') &&
-                                  email.contains('.')
-                                  ? 'Valied Email Is Requered'
-                                  : null;
+                            validator: (email) {
+                              return email.length > 6 &&
+                                      email.contains('@') &&
+                                      email.contains('.')
+                                  ? null
+                                  : 'Valied Email Is Requered';
                             },
                           ),
                           //password
                           TextFormField(
-                            controller: _textFieldController,
-                            decoration: const InputDecoration(
+//                            controller: _textFieldController,
+                            decoration: InputDecoration(
                               labelText: 'Password',
                               labelStyle: TextStyle(
                                   color: primaryColor2,
@@ -170,27 +168,17 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                   color: Colors.red,
                                 ),
                               ),
-//                            suffixIcon: IconButton(
-//                              icon: _obscureText ? Icon(FontAwesomeIcons.solidEye) :Icon(FontAwesomeIcons.solidEyeSlash),
-//                              onPressed: (){
-//                                _obscureText != value;
-//                              },
-//                            ),
                             ),
-                            onSaved: (String pass) {
-                              setState(() {
-                                print(pass);
-                                this.password = pass;
-                              });
+                            onSaved: (pass) {
+                              _password = pass;
                             },
-                            validator: (String pass) {
-                              return pass.isNotEmpty && pass.length < 6
+                            validator: (pass) {
+                              return pass.isEmpty && pass.length < 6
                                   ? 'Password menimum 6 charter or Is Requered'
                                   : null;
                             },
                             obscureText: _obscureText,
                           ),
-
                           //checker
                           Row(
                             children: <Widget>[
@@ -209,10 +197,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                   onTap: () {
                                     setState(() {
                                       button = !button;
-                                      if(_formKey.currentState.validate()){
-                                        active = button;
-                                      }
-                                      print(button);
                                     });
                                   },
                                   child: Container(
@@ -229,18 +213,23 @@ class _RegisterScreenState extends State<RegisterScreen> {
                             ],
                           ),
 
-                          //submint button
+                          //todo:submint button
                           Container(
                             height: 50,
                             width: size.width,
                             child: RaisedButton(
-                              onPressed: (){
-                                if(_formKey.currentState.validate()){
-                                  active = true;
-                                }
+                              onPressed: () {
+                               setState(() {
+                                 _submit();
+                               });
                               },
-                              color: active ? primaryColor2:primaryColor2.withOpacity(0.5) ,
-                              child: Text("Create Account",style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),),
+                              color: primaryColor2,
+                              child: Text(
+                                "Create Account",
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              ),
                             ),
                           )
                         ],

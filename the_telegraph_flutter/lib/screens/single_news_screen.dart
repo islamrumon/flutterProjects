@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:the_telegraph_flutter/helper/helper.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:the_telegraph_flutter/screens/login_screen.dart';
 import 'package:the_telegraph_flutter/screens/modal_screen.dart';
 import 'package:the_telegraph_flutter/screens/register_screen.dart';
 import 'package:the_telegraph_flutter/screens/user_modal_screen.dart';
@@ -163,6 +164,7 @@ class _SingleNewsScreenState extends State<SingleNewsScreen> {
                                 InkWell(
                                   onTap: (){
                                     print('Login command');
+                                    Navigator.push(context, MaterialPageRoute(builder: (context)=>LoginScreen()));
                                   },
                                   child: Row(
                                     children: <Widget>[
