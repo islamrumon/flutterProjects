@@ -60,7 +60,6 @@ class FlightListTopPart extends StatelessWidget {
               child: Container(
                 padding: EdgeInsets.all(16.0),
                 child: Row(
-
                   mainAxisSize: MainAxisSize.max,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[

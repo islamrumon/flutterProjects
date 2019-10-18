@@ -21,29 +21,6 @@ class Carousel extends StatefulWidget {
 
 class _CarouselState extends State<Carousel> {
 
-//  final items= <Icon>[
-//    Icon(Icons.email),
-//    Icon(Icons.phone_android),
-//    Icon(Icons.comment),
-//    Icon(Icons.share),
-//    Icon(Icons.thumb_up),
-//  ];
-
-//  VideoPlayerController _controller;
-//  void initState(){
-//    super.initState();
-//    _controller = VideoPlayerController.network(
-//        'https://www.youtube.com/embed/6wNFJIbTxNk'
-//    )
-//      ..initialize().then((_) {
-//        setState(() {
-//
-//        });
-//      });
-//  }
-
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
